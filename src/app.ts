@@ -40,6 +40,10 @@ io.on('connection', (socket) => {
       socket.broadcast.emit('addCategory', 'New category added');
     } else if (msg === 'modifyAnimal') {
       socket.broadcast.emit('modifyAnimal', 'Animal updated');
+    } else if(msg === 'modifyCategory') {
+      socket.broadcast.emit('modifyCategory', 'Category updated');
+    } else if(msg === 'deleteCategory') {
+      socket.broadcast.emit('deleteCategory', 'Category deleted');
     }
   });
 });
