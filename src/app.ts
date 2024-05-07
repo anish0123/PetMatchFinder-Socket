@@ -44,6 +44,12 @@ io.on('connection', (socket) => {
       socket.broadcast.emit('modifyCategory', 'Category updated');
     } else if(msg === 'deleteCategory') {
       socket.broadcast.emit('deleteCategory', 'Category deleted');
+    } else if (msg === 'rating') {
+      socket.broadcast.emit('addRating', 'New Rating added');
+    } else if (msg === 'modifyRating') {
+      socket.broadcast.emit('modifyRating', 'Rating updated')
+    } else if (msg === 'deleteRating') {
+      socket.broadcast.emit('deleteRating', 'Rating deleted')
     }
   });
 });
