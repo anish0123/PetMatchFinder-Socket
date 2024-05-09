@@ -10,10 +10,17 @@ Pet Match Finder - Socket Server is created for informing client side when data 
 ## Installation steps:
 - Clone the project. 
 - Do npm install.
-- Create .env file and add following fields:
-    - NODE_ENV 
-  - PORT 
-- Do npm run dev
+- Create `.env` file and add following fields:
+  ```
+  NODE_ENV=development
+  PORT=3003
+  ```
+- Do `npm run dev`
+
+  ## Related
+  - [Azure GraphQl server](https://anishm-pet-match-finder-api.azurewebsites.net/graphql)
+  - [Pet Match Finder- UI](https://anish0123.github.io/petMatchFinder-GUI/)
+  
 
 ## Author
-Anish Maharjan
+[Anish Maharjan](https://github.com/anish0123)
